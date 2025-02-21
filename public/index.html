@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat App with socket</title>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js"
+            integrity="sha512-8BHxHDLsOHx+flIrQ0DrZcea7MkHqRU5GbTHmbdzMRnAaoCIkZ97PqZcXJkKZckMMhqfoeaJE+DNUVuyoQsO3Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="chat">
+            <div id="chat-box">
+                <div id="messages"></div>
+                <div id="chatingMessage"></div>
+            </div>
+            <input
+                type="text"
+                name="sender"
+                id="sender"
+                placeholder="Name"
+            >
+            <form>
+                <div class="flex">
+                    <input
+                        type="text"
+                        name="message"
+                        id="messageInput"
+                        placeholder="Message"
+                    >
+                    <button type="submit" id="submitBtn">Send</button>
+                </div>
+            </form>
+        </div>
+        <script src="chat.js"></script>
+    </body>
+</html>
